@@ -19,12 +19,15 @@ class ViewController: UIViewController {
     }
 
     @IBAction func zc1(sender: AnyObject) {
-        
-        self.zz_presentSheetController(["拉黑","xxxxxx","屏蔽用户","举报它","分享用户"], clickItemHandler: { index in
-            //0,1,2,3
-            print(index)
-            
-        })
+        self.zz_presentSheetController(["相册","xxxxxx","屏蔽用户","举报它","分享用户"], clickItemHandler: { [weak self] (index) in
+            guard let strongSelf = self else { return }
+                if index == 0{
+                    strongSelf.zz_presentPhotoVC(4, completeHandler: { (assets) in
+                        print(assets.count)
+                    })
+                }
+                print(index)
+            })
         
     }
 }

@@ -47,7 +47,6 @@ class ZZPresentVC: UIViewController,UITableViewDelegate,UITableViewDataSource{
         self.clickItems = clickItems
     }
     
-    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdetiter, forIndexPath: indexPath) as! PresentCell
         cell.name = items[indexPath.row]
@@ -66,8 +65,10 @@ class ZZPresentVC: UIViewController,UITableViewDelegate,UITableViewDataSource{
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
-        self.clickItems?(item: indexPath.row)
-        self.dismissViewControllerAnimated(true, completion: nil)
+        
+        self.dismissViewControllerAnimated(true){ [weak self] in
+            self?.clickItems?(item: indexPath.row)
+        }
     }
 }
 

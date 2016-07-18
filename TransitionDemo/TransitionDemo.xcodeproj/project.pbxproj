@@ -12,6 +12,16 @@
 		2049A6561C9836CF00D056BD /* PresentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2049A6511C9836CF00D056BD /* PresentCell.swift */; };
 		2049A6571C9836CF00D056BD /* ZZPresentAnimatior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2049A6521C9836CF00D056BD /* ZZPresentAnimatior.swift */; };
 		2049A6581C9836CF00D056BD /* ZZPresentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2049A6531C9836CF00D056BD /* ZZPresentVC.swift */; };
+		205BAAAE1D3C7FC600AEFAB4 /* UICollectionView+Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205BAAA41D3C7FC600AEFAB4 /* UICollectionView+Add.swift */; };
+		205BAAAF1D3C7FC600AEFAB4 /* ZZAssetGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205BAAA51D3C7FC600AEFAB4 /* ZZAssetGridViewController.swift */; };
+		205BAAB01D3C7FC600AEFAB4 /* ZZAssetPreviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205BAAA61D3C7FC600AEFAB4 /* ZZAssetPreviewVC.swift */; };
+		205BAAB11D3C7FC600AEFAB4 /* ZZGridViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205BAAA71D3C7FC600AEFAB4 /* ZZGridViewCell.swift */; };
+		205BAAB21D3C7FC600AEFAB4 /* ZZImage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 205BAAA81D3C7FC600AEFAB4 /* ZZImage.storyboard */; };
+		205BAAB31D3C7FC600AEFAB4 /* ZZImage.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 205BAAA91D3C7FC600AEFAB4 /* ZZImage.xcassets */; };
+		205BAAB41D3C7FC600AEFAB4 /* ZZImageSelectedLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205BAAAA1D3C7FC600AEFAB4 /* ZZImageSelectedLayer.swift */; };
+		205BAAB51D3C7FC600AEFAB4 /* ZZPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205BAAAB1D3C7FC600AEFAB4 /* ZZPhotoCell.swift */; };
+		205BAAB61D3C7FC600AEFAB4 /* ZZPhotoPreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205BAAAC1D3C7FC600AEFAB4 /* ZZPhotoPreviewCell.swift */; };
+		205BAAB71D3C7FC600AEFAB4 /* ZZPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205BAAAD1D3C7FC600AEFAB4 /* ZZPhotoViewController.swift */; };
 		2093D3C81C970FF800E8E387 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2093D3C71C970FF800E8E387 /* AppDelegate.swift */; };
 		2093D3CA1C970FF800E8E387 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2093D3C91C970FF800E8E387 /* ViewController.swift */; };
 		2093D3CD1C970FF800E8E387 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2093D3CB1C970FF800E8E387 /* Main.storyboard */; };
@@ -44,6 +54,16 @@
 		2049A6511C9836CF00D056BD /* PresentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentCell.swift; sourceTree = "<group>"; };
 		2049A6521C9836CF00D056BD /* ZZPresentAnimatior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZPresentAnimatior.swift; sourceTree = "<group>"; };
 		2049A6531C9836CF00D056BD /* ZZPresentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZPresentVC.swift; sourceTree = "<group>"; };
+		205BAAA41D3C7FC600AEFAB4 /* UICollectionView+Add.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Add.swift"; sourceTree = "<group>"; };
+		205BAAA51D3C7FC600AEFAB4 /* ZZAssetGridViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZAssetGridViewController.swift; sourceTree = "<group>"; };
+		205BAAA61D3C7FC600AEFAB4 /* ZZAssetPreviewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZAssetPreviewVC.swift; sourceTree = "<group>"; };
+		205BAAA71D3C7FC600AEFAB4 /* ZZGridViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZGridViewCell.swift; sourceTree = "<group>"; };
+		205BAAA81D3C7FC600AEFAB4 /* ZZImage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ZZImage.storyboard; sourceTree = "<group>"; };
+		205BAAA91D3C7FC600AEFAB4 /* ZZImage.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ZZImage.xcassets; sourceTree = "<group>"; };
+		205BAAAA1D3C7FC600AEFAB4 /* ZZImageSelectedLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZImageSelectedLayer.swift; sourceTree = "<group>"; };
+		205BAAAB1D3C7FC600AEFAB4 /* ZZPhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZPhotoCell.swift; sourceTree = "<group>"; };
+		205BAAAC1D3C7FC600AEFAB4 /* ZZPhotoPreviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZPhotoPreviewCell.swift; sourceTree = "<group>"; };
+		205BAAAD1D3C7FC600AEFAB4 /* ZZPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZPhotoViewController.swift; sourceTree = "<group>"; };
 		2093D3C41C970FF800E8E387 /* TransitionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransitionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2093D3C71C970FF800E8E387 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2093D3C91C970FF800E8E387 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +116,23 @@
 			path = ZZPresentSheetView;
 			sourceTree = "<group>";
 		};
+		205BAAA31D3C7FC600AEFAB4 /* ZZPhotoPicker */ = {
+			isa = PBXGroup;
+			children = (
+				205BAAA41D3C7FC600AEFAB4 /* UICollectionView+Add.swift */,
+				205BAAA51D3C7FC600AEFAB4 /* ZZAssetGridViewController.swift */,
+				205BAAA61D3C7FC600AEFAB4 /* ZZAssetPreviewVC.swift */,
+				205BAAA71D3C7FC600AEFAB4 /* ZZGridViewCell.swift */,
+				205BAAA81D3C7FC600AEFAB4 /* ZZImage.storyboard */,
+				205BAAA91D3C7FC600AEFAB4 /* ZZImage.xcassets */,
+				205BAAAA1D3C7FC600AEFAB4 /* ZZImageSelectedLayer.swift */,
+				205BAAAB1D3C7FC600AEFAB4 /* ZZPhotoCell.swift */,
+				205BAAAC1D3C7FC600AEFAB4 /* ZZPhotoPreviewCell.swift */,
+				205BAAAD1D3C7FC600AEFAB4 /* ZZPhotoViewController.swift */,
+			);
+			path = ZZPhotoPicker;
+			sourceTree = "<group>";
+		};
 		2093D3BB1C970FF800E8E387 = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +156,7 @@
 		2093D3C61C970FF800E8E387 /* TransitionDemo */ = {
 			isa = PBXGroup;
 			children = (
+				205BAAA31D3C7FC600AEFAB4 /* ZZPhotoPicker */,
 				2049A64E1C9836CF00D056BD /* ZZPresentSheetView */,
 				2093D3C71C970FF800E8E387 /* AppDelegate.swift */,
 				2093D3C91C970FF800E8E387 /* ViewController.swift */,
@@ -252,6 +290,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				205BAAB31D3C7FC600AEFAB4 /* ZZImage.xcassets in Resources */,
+				205BAAB21D3C7FC600AEFAB4 /* ZZImage.storyboard in Resources */,
 				2093D3D21C970FF800E8E387 /* LaunchScreen.storyboard in Resources */,
 				2093D3CF1C970FF800E8E387 /* Assets.xcassets in Resources */,
 				2093D3CD1C970FF800E8E387 /* Main.storyboard in Resources */,
@@ -280,12 +320,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				2049A6561C9836CF00D056BD /* PresentCell.swift in Sources */,
+				205BAAAF1D3C7FC600AEFAB4 /* ZZAssetGridViewController.swift in Sources */,
 				2049A6581C9836CF00D056BD /* ZZPresentVC.swift in Sources */,
+				205BAAB61D3C7FC600AEFAB4 /* ZZPhotoPreviewCell.swift in Sources */,
 				2093D3CA1C970FF800E8E387 /* ViewController.swift in Sources */,
 				2049A6541C9836CF00D056BD /* CustomPresentationAnimator.swift in Sources */,
 				2049A6551C9836CF00D056BD /* CustomPresntationController.swift in Sources */,
+				205BAAB51D3C7FC600AEFAB4 /* ZZPhotoCell.swift in Sources */,
+				205BAAB41D3C7FC600AEFAB4 /* ZZImageSelectedLayer.swift in Sources */,
+				205BAAB01D3C7FC600AEFAB4 /* ZZAssetPreviewVC.swift in Sources */,
+				205BAAB11D3C7FC600AEFAB4 /* ZZGridViewCell.swift in Sources */,
 				2049A6571C9836CF00D056BD /* ZZPresentAnimatior.swift in Sources */,
+				205BAAAE1D3C7FC600AEFAB4 /* UICollectionView+Add.swift in Sources */,
 				2093D3C81C970FF800E8E387 /* AppDelegate.swift in Sources */,
+				205BAAB71D3C7FC600AEFAB4 /* ZZPhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
