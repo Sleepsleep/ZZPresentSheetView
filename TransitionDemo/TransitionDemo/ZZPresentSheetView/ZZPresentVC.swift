@@ -8,7 +8,7 @@
 
 import UIKit
 
-private let kRowHeight:CGFloat = 40
+private let kRowHeight:CGFloat = 52
 private let cellIdetiter = "secondCell"
 class ZZPresentVC: UIViewController,UITableViewDelegate,UITableViewDataSource{
 
@@ -34,13 +34,18 @@ class ZZPresentVC: UIViewController,UITableViewDelegate,UITableViewDataSource{
         tableView = UITableView()
         self.view.addSubview(tableView)
         tableView.frame = self.view.bounds
-        self.tableView.separatorInset = UIEdgeInsets(top: 0, left:20, bottom: 0, right: 20)
+        self.tableView.separatorInset = UIEdgeInsets(top: 0, left:0, bottom: 0, right: 0)
         self.tableView.tableFooterView = UIView(frame: CGRectZero)
         tableView.scrollEnabled = false
         tableView.rowHeight = kRowHeight
         tableView.registerClass(PresentCell.self, forCellReuseIdentifier: cellIdetiter)
         tableView.delegate = self
         tableView.dataSource = self
+        let effect = UIBlurEffect(style: UIBlurEffectStyle.Dark)
+        let effectView = UIVisualEffectView(effect: effect)
+        effectView.frame = tableView.bounds
+        tableView.backgroundView = effectView
+        
     }
     
     func clickItemHandle(clickItems:((itemIndex:Int)->())?){
@@ -70,6 +75,7 @@ class ZZPresentVC: UIViewController,UITableViewDelegate,UITableViewDataSource{
             self?.clickItems?(item: indexPath.row)
         }
     }
+
 }
 
 

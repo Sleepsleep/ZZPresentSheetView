@@ -36,9 +36,14 @@ class PresentCell: UITableViewCell {
         nameLabel = UILabel()
         nameLabel.textAlignment = .Center
         self.contentView.addSubview(nameLabel)
-        nameLabel.textColor = UIColor.darkGrayColor()
-        nameLabel.font = UIFont.systemFontOfSize(15)
-        nameLabel.frame = CGRectMake(0, 0, sw , self.frame.height)
+        nameLabel.textColor = UIColor.blackColor()
+        nameLabel.font = UIFont.systemFontOfSize(16)
+        self.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        self.preservesSuperviewLayoutMargins = false
+        self.layoutMargins = UIEdgeInsetsZero
+        nameLabel.translatesAutoresizingMaskIntoConstraints = false
+        self.contentView.addConstraint(NSLayoutConstraint(item: nameLabel, attribute: .CenterX, relatedBy: .Equal, toItem: self.contentView, attribute: .CenterX, multiplier: 1, constant: 0))
+        self.contentView.addConstraint(NSLayoutConstraint(item: nameLabel, attribute: .CenterY, relatedBy: .Equal, toItem: self.contentView, attribute: .CenterY, multiplier: 1, constant: 0))
     }
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
