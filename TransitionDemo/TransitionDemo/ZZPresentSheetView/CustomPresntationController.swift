@@ -59,7 +59,7 @@ extension CustomPresentationController {
         dimmingView.backgroundColor = UIColor.blackColor()
         dimmingView.opaque = false
         dimmingView.autoresizingMask = [UIViewAutoresizing.FlexibleWidth, UIViewAutoresizing.FlexibleHeight]
-        dimmingView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: Selector("dimmingViewTapped:")))
+        dimmingView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(CustomPresentationController.dimmingViewTapped(_:))))
         self.dimmingView = dimmingView
         self.containerView?.addSubview(dimmingView)
         

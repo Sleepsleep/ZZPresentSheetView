@@ -23,7 +23,7 @@ class ZZPresentAnimatior: NSObject,UIViewControllerAnimatedTransitioning {
         var fromView = fromViewController?.view
         var toView = toViewController?.view
         
-        if transitionContext.respondsToSelector(Selector("viewForKey:")) {
+        if transitionContext.respondsToSelector(#selector(UIViewControllerTransitionCoordinatorContext.viewForKey(_:))) {
             fromView = transitionContext.viewForKey(UITransitionContextFromViewKey)
             toView = transitionContext.viewForKey(UITransitionContextToViewKey)
         }

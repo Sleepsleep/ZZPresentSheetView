@@ -33,17 +33,20 @@ class PresentCell: UITableViewCell {
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         // Initialization code
+        self.contentView.backgroundColor = UIColor.clearColor()
+        self.backgroundColor = UIColor.clearColor()
         nameLabel = UILabel()
         nameLabel.textAlignment = .Center
         self.contentView.addSubview(nameLabel)
         nameLabel.textColor = UIColor.blackColor()
         nameLabel.font = UIFont.systemFontOfSize(16)
-        self.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        self.separatorInset = UIEdgeInsets(top: 0, left: 2 , bottom: 0, right: 1)
         self.preservesSuperviewLayoutMargins = false
         self.layoutMargins = UIEdgeInsetsZero
         nameLabel.translatesAutoresizingMaskIntoConstraints = false
         self.contentView.addConstraint(NSLayoutConstraint(item: nameLabel, attribute: .CenterX, relatedBy: .Equal, toItem: self.contentView, attribute: .CenterX, multiplier: 1, constant: 0))
         self.contentView.addConstraint(NSLayoutConstraint(item: nameLabel, attribute: .CenterY, relatedBy: .Equal, toItem: self.contentView, attribute: .CenterY, multiplier: 1, constant: 0))
+        
     }
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)

@@ -17,7 +17,7 @@ class ZZPresentVC: UIViewController,UITableViewDelegate,UITableViewDataSource{
     private var clickItems:((item:Int)->())?
     init(items:[String]){
         self.items = items
-        self.items.append("取消")
+//        self.items.append("取消")
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -29,8 +29,8 @@ class ZZPresentVC: UIViewController,UITableViewDelegate,UITableViewDataSource{
     var tableView:UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.whiteColor()
-        self.preferredContentSize = CGSizeMake(self.view.bounds.size.width, CGFloat(items.count)*kRowHeight)
+        self.view.backgroundColor = UIColor.clearColor()
+        self.preferredContentSize = CGSizeMake(self.view.bounds.size.width, CGFloat(items.count+1)*kRowHeight+5)
         tableView = UITableView()
         self.view.addSubview(tableView)
         tableView.frame = self.view.bounds
@@ -41,11 +41,10 @@ class ZZPresentVC: UIViewController,UITableViewDelegate,UITableViewDataSource{
         tableView.registerClass(PresentCell.self, forCellReuseIdentifier: cellIdetiter)
         tableView.delegate = self
         tableView.dataSource = self
-        let effect = UIBlurEffect(style: UIBlurEffectStyle.Dark)
-        let effectView = UIVisualEffectView(effect: effect)
-        effectView.frame = tableView.bounds
-        tableView.backgroundView = effectView
         
+        tableView.backgroundColor = UIColor.clearColor()
+        let blurView = ZZBlurView()
+        tableView.backgroundView = blurView
     }
     
     func clickItemHandle(clickItems:((itemIndex:Int)->())?){
@@ -54,25 +53,60 @@ class ZZPresentVC: UIViewController,UITableViewDelegate,UITableViewDataSource{
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdetiter, forIndexPath: indexPath) as! PresentCell
-        cell.name = items[indexPath.row]
-        if indexPath.row == items.count-1{
-            cell.isCancel = true
-        }else{
+        if indexPath.section == 0{
+            cell.name = items[indexPath.row]
             cell.isCancel = false
+            
+        }else{
+            cell.name = "取消"
+            cell.isCancel = true
         }
+        
         return cell
     }
     
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 2
+    }
+    
+    func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+        if section == 0{
+            return nil
+        }else{
+            
+            let v = UIView()
+            v.backgroundColor = UIColor(white: 0.5, alpha: 0.25)
+            return v
+        }
+    }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return items.count
+        if section == 0{
+            return items.count
+        }
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        if section == 0{
+            return 0
+        }else{
+            return 5
+        }
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         
         self.dismissViewControllerAnimated(true){ [weak self] in
-            self?.clickItems?(item: indexPath.row)
+            guard let strongSelf = self else { return }
+            if indexPath.section == 0{
+                strongSelf.clickItems?( item: indexPath.row )
+            }else{
+                strongSelf.clickItems?( item: strongSelf.items.count )
+            }
+            
         }
     }
 

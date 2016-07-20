@@ -22,6 +22,7 @@
 		205BAAB51D3C7FC600AEFAB4 /* ZZPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205BAAAB1D3C7FC600AEFAB4 /* ZZPhotoCell.swift */; };
 		205BAAB61D3C7FC600AEFAB4 /* ZZPhotoPreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205BAAAC1D3C7FC600AEFAB4 /* ZZPhotoPreviewCell.swift */; };
 		205BAAB71D3C7FC600AEFAB4 /* ZZPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205BAAAD1D3C7FC600AEFAB4 /* ZZPhotoViewController.swift */; };
+		205BAAB91D3CCA1300AEFAB4 /* ZZBlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205BAAB81D3CCA1300AEFAB4 /* ZZBlurView.swift */; };
 		2093D3C81C970FF800E8E387 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2093D3C71C970FF800E8E387 /* AppDelegate.swift */; };
 		2093D3CA1C970FF800E8E387 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2093D3C91C970FF800E8E387 /* ViewController.swift */; };
 		2093D3CD1C970FF800E8E387 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2093D3CB1C970FF800E8E387 /* Main.storyboard */; };
@@ -64,6 +65,7 @@
 		205BAAAB1D3C7FC600AEFAB4 /* ZZPhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZPhotoCell.swift; sourceTree = "<group>"; };
 		205BAAAC1D3C7FC600AEFAB4 /* ZZPhotoPreviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZPhotoPreviewCell.swift; sourceTree = "<group>"; };
 		205BAAAD1D3C7FC600AEFAB4 /* ZZPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZPhotoViewController.swift; sourceTree = "<group>"; };
+		205BAAB81D3CCA1300AEFAB4 /* ZZBlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZBlurView.swift; sourceTree = "<group>"; };
 		2093D3C41C970FF800E8E387 /* TransitionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransitionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2093D3C71C970FF800E8E387 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2093D3C91C970FF800E8E387 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				2049A6511C9836CF00D056BD /* PresentCell.swift */,
 				2049A6521C9836CF00D056BD /* ZZPresentAnimatior.swift */,
 				2049A6531C9836CF00D056BD /* ZZPresentVC.swift */,
+				205BAAB81D3CCA1300AEFAB4 /* ZZBlurView.swift */,
 			);
 			path = ZZPresentSheetView;
 			sourceTree = "<group>";
@@ -334,6 +337,7 @@
 				205BAAAE1D3C7FC600AEFAB4 /* UICollectionView+Add.swift in Sources */,
 				2093D3C81C970FF800E8E387 /* AppDelegate.swift in Sources */,
 				205BAAB71D3C7FC600AEFAB4 /* ZZPhotoViewController.swift in Sources */,
+				205BAAB91D3CCA1300AEFAB4 /* ZZBlurView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
